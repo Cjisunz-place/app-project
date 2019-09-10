@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>고래의 목표</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/wNumb.js"></script>
+</head>
+<body>
+<!--loading-p -->  
+  <div class="loading-p">  
+    <a href="#"><i class="icon icon-logo"></i></a>
+    <a href="#"><img src="css/img/Untitled-1.gif" alt=""> </a>
+  </div>
+<!--/loading-p -->
+
+<!--login-p -->
+  <div class="login-p">    
+    <div><i class="icon icon-whale"></i> </div>
+    <h2>칭찬은 <br>고래도 춤추게한다.</h2>
+    <div class="sns-login">            
+      <a href=""><i class="icon icon-facebookc"></i></a>
+      <a href=""><i class="icon icon-kakaoc"></i></a>
+      <a href=""><i class="icon icon-google"></i></a>
+      <a href=""><i class="icon icon-naver"></i></a>
+    </div>
+    <div class="login-form">
+      <form>
+        <input type="text" placeholder="이메일을 입력해주세요." id="id">
+        <input type="password" placeholder="비밀번호를 입력해주세요." id="password">
+        <button id="btn-submit" type="button">로그인</button>                           
+      </form>
+      <div class="link">
+        <a href="#">회원가입</a>
+        <a href="#">ID</a> / <a href="#">PW 찾기</a>                
+      </div>
+    </div>
+  </div>
+<!--/login-p -->
+
+<!--login-pw -->
+  <div class="login-pw">  
+    <div><i class="icon icon-whale"></i></div>
+    <h2>칭찬은 <br>고래도 춤추게한다.</h2>
+    <p>암호입력</p>
+    <div class="pw-btn">
+      <a href="#"><i class="icon icon-pw" class="active"></i></a>
+      <a href="#"><i class="icon icon-pw"></i></a>
+      <a href="#"><i class="icon icon-pw"></i></a>
+      <a href="#"><i class="icon icon-pw"></i></a>
+    </div>
+    <button>확인</button>       
+  </div>
+<!--/login-pw -->
+
+<!--login-chart -->
+  <div class="login-chart">
+    <h3>고래의 목표</h3>
+    <a href="#" class="close"><i class="icon icon-close"></i></a>        
+    <div class="chart-form">
+      <form action="../../index.html" method="post">
+        <fieldset>
+          <legend class="blind">아이디/비밀번호</legend>
+          <div class="group">
+            <div class="row">
+              <label for="id" class="blind">아이디</label>
+              <input type="text" id="id" name="id" placeholder="닉네임">
+              <p>*닉네임 사용이 가능합니다.(4자리이하)</p>                            
+              <button type="button" class="btn-primary">중복확인</button>
+            </div>
+            <div class="row">
+              <label for="mail" class="blind">이메일</label>
+              <input type="password" id="mail" name="mail" placeholder="이메일">                            
+            </div>
+            <div class="row">
+              <label for="pw" class="blind">비밀번호</label>
+              <input type="password" id="pw" name="pw" placeholder="비밀번호">                            
+            </div>
+            <div class="row">
+              <label for="repw" class="blind">비밀번호확인</label>
+              <input type="password" id="repw" placeholder="비밀번호확인">                            
+            </div>
+            <p>계정을 만들면 고래의 목표의 개인정보 수집방침,<br>
+                    이용약관(마케팅 정보, 수신정보 포함)에 동의하게됩니다.</p>
+            <button class="ok">가입하기</button>                    
+          </div>
+        </fieldset>
+      </form>
+      <div class="sns-chart">
+        <h2>sns로 가입하기</h2>
+        <div class="sns-login">
+          <a href=""><i class="icon icon-facebookc"></i></a>
+          <a href=""><i class="icon icon-kakaoc"></i></a>
+          <a href=""><i class="icon icon-google"></i></a>
+          <a href=""><i class="icon icon-naver"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--/login-chart -->
+
+<!--pw-setting -->
+  <div class="pw-setting">           
+    <button><i class="icon icon-backarrow"></i></button>
+    <h3>암호설정</h3>
+    <div class="pw-cricle">
+      <a href=""><i class="icon icon-cricle"></i></a>
+      <a href=""><i class="icon icon-cricle"></i></a>
+      <a href=""><i class="icon icon-cricle"></i></a>
+      <a href=""><i class="icon icon-cricle"></i></a>
+      <p>* 암호를 입력해주세요.</p>
+      <!-- <p class="erro">암호가 일치 하지 않습니다.<br>다시 입력해주세요.</p> -->  
+    </div>     
+    <div class="pw-number">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="cancel">취소</button>
+      <button>0</button>
+      <button class="ok">완료</button>
+    </div> 
+  </div>
+<!--/pw-setting -->
+
+<!--pw-check -->
+  <div class="pw-check">           
+    <button><i class="icon icon-backarrow"></i></button>
+    <h3>암호설정</h3>
+    <div class="pw-cricle">
+      <a href=""><i class="icon icon-cricle"></i></a>
+      <a href=""><i class="icon icon-cricle"></i></a>
+      <a href=""><i class="icon icon-cricle"></i></a>
+      <a href=""><i class="icon icon-cricle"></i></a>
+      <p>* 확인을 위해 한번 더 입력해주세요.</p>
+    </div>     
+    <div class="pw-number">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="cancel">취소</button>
+      <button>0</button>
+      <button class="ok">완료</button>
+    </div> 
+  </div>
+<!--/pw-check -->
+
+<!--login-find -->
+  <div class="login-find">
+    <a href="#"><i class="icon icon-close"></i></a>
+    <h3>고래의목표</h3>
+    <div class="wrap">
+      <p>ID찾기</p>
+      <p>입력하신 메일로 가입하신 이메일을 발송합니다.</p>
+      <input type="text" placeholder="이메일을 입력해주세요.">
+      <button class="m-send">이메일 발송</button>
+    </div>
+    <div class="wrap">
+      <p>PW찾기</p>
+      <p>임시비밀번호를 가입하신 이메일로 발송합니다.</p>
+      <input type="text" placeholder="이메일을 입력해 주세요.">        
+      <button class="p-send">임시비밀번호 발송</button>
+    </div>
+  </div>
+<!--/login-find -->
+
+<!-- goal-p -->
+  <div class="goal-p">
+    <div class="header-wrap">
+      <a href="#"><i class="icon icon-menu"></i></a>
+      <a href="#"><i class="icon icon-logow"></i></a>
+      <a href="#"><i class="icon icon-more"></i></a>
+    </div>
+    <a href="#"><i class="icon icon-whalemore"></i></a>
+    <p>목표를 설정해보세요.</p>
+  </div>
+<!--/goal-p -->
+
+<!--goalset-p -->
+  <div class="goalset-p">
+    <a href="#"><i class="icon icon-close"></i></a>
+    <h3>고래의목표</h3>
+    <div class="goal-wrap">
+      <input type="text" placeholder="목표제목을 작성해주세요.">        
+      <input type="text" placeholder="달성 시 보상을 작성해주세요."> 
+      <input type="text" placeholder="목표달성을 위한 세부내용을 작성해주세요.">
+      <p>ex) 월요일,화요일은 6까지 작업끝내기.나머지 요일에는 7시까지 작업 끝내기.</p> 
+      <div class="slider">               
+        <label for="amount">칭찬스티커 개수를 설정해보세요.</label>
+        <div class="price">
+          <div id="slider"></div>
+          <!-- <div class="amount">
+            <span class="min">￦<b id="min">0</b></span>
+            <span class="max">￦<b id="max">200000</b>~</span>
+          </div> -->
+        </div>
+      </div>
+      <div class="set-btn">
+        <ul class="tab-nav">
+          <li><a href="#tab1" class="active">혼자하기</a></li>
+          <li><a href="#tab2">함께하기</a></li>
+        </ul>
+        <div class="tab-contents">
+          <div id="tab1" style="display: block;">
+            <ul>
+              <li><a href="#"><span>혼자만 사용가능합니다.</span></a></li>
+              <li><a href="#"><span>* 목표추가완료 후 친구를 초대 할 수 있습니다.</span></a></li>                                          
+            </ul>
+          </div>
+          <div id="tab2">
+            <ul>
+              <li><a href="#"><span>다른사람과 사용이 가능합니다.</span></a></li>
+              <li><a href="#"><span>* 목표추가완료 후 친구를 초대 할 수 있습니다.</span></a></li>                 
+            </ul>
+          </div>                       
+        </div>                  
+      </div>
+      <button>완료</button>
+    </div>
+  </div>
+<!--/goalset-p -->
+
+<!--goal-main -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="goal-main">   
+          <div class="header-wrap">
+            <a href="#"><i class="icon icon-menu"></i></a>
+            <a href="#"><i class="icon icon-logow"></i></a>
+            <a href="#"><i class="icon icon-more"></i></a>
+          </div>     
+          <div class="progressbar">                
+            <span class="Count" class="blind">200</span>
+            <span class="Count" class="blind">55</span>
+            <svg class="circle-chart"viewbox="0 0 33.83098862 33.83098862" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+              <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="15%" stop-color="#7C88FF"></stop>
+                <stop offset="25%" stop-color="#97A4FF"></stop>
+                <stop offset="40%" stop-color="#BDC8FF"></stop>
+                <stop offset="50%" stop-color="#D0D9F7"></stop>
+                <stop offset="80%" stop-color="#F7F0D2"></stop>
+                <stop offset="100%" stop-color="#FFF3B1"></stop>
+              </linearGradient>      
+              <circle class="circle-chart-circle" class="external-circle" stroke-width="1.5" fill="none" stroke="url(#linearColors)"cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart-info">
+                <text class="circle-chart-percent" x="16.91549431" y="18" alignment-baseline="central" text-anchor="middle" font-size="8">0%</text>  
+              </g>
+            </svg>
+          </div>
+          <div class="text-box">
+            <p class="goal-name">하루동안 물 2L마시기</p>
+            <i class="icon icon-present"></i>
+            <p class="goal-reward">mac립스틱 1개사기</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="goal-end">
+          <div class="header-wrap">
+            <a href="#"><i class="icon icon-menu"></i></a>
+            <a href="#"><i class="icon icon-logow"></i></a>
+            <a href="#"><i class="icon icon-more"></i></a>
+          </div>
+          <p>100% 목표달성 성공!!</p>
+          <i class="icon icon-whalecap"></i>
+          <div class="text-box">
+            <p>하루동안 물 2L마시기</p>
+            <i class="icon icon-present"></i>            
+            <p>mac 립스틱 1개사기</p>            
+          </div>
+          <a href="#"><span>자랑하기</span></a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="goal-main">   
+          <div class="header-wrap">
+            <a href="#"><i class="icon icon-menu"></i></a>
+            <a href="#"><i class="icon icon-logow"></i></a>
+            <a href="#"><i class="icon icon-more"></i></a>
+          </div>     
+          <div class="progressbar">                
+            <span class="Count" class="blind">200</span>
+            <span class="Count" class="blind">55</span>
+            <svg class="circle-chart"viewbox="0 0 33.83098862 33.83098862" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+              <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="15%" stop-color="#7C88FF"></stop>
+                <stop offset="25%" stop-color="#97A4FF"></stop>
+                <stop offset="40%" stop-color="#BDC8FF"></stop>
+                <stop offset="50%" stop-color="#D0D9F7"></stop>
+                <stop offset="80%" stop-color="#F7F0D2"></stop>
+                <stop offset="100%" stop-color="#FFF3B1"></stop>
+              </linearGradient>      
+              <circle class="circle-chart-circle" class="external-circle" stroke-width="1.5" fill="none" stroke="url(#linearColors)"cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart-info">
+                <text class="circle-chart-percent" x="16.91549431" y="18" alignment-baseline="central" text-anchor="middle" font-size="8">0%</text>  
+              </g>
+            </svg>
+          </div>
+          <div class="text-box">
+            <p class="goal-name">하루동안 물 2L마시기</p>
+            <i class="icon icon-present"></i>
+            <p class="goal-reward">mac립스틱 1개사기</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="goal-main">   
+          <div class="header-wrap">
+            <a href="#"><i class="icon icon-menu"></i></a>
+            <a href="#"><i class="icon icon-logow"></i></a>
+            <a href="#"><i class="icon icon-more"></i></a>
+          </div>     
+          <div class="progressbar">                
+            <span class="Count" class="blind">200</span>
+            <span class="Count" class="blind">55</span>
+            <svg class="circle-chart"viewbox="0 0 33.83098862 33.83098862" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+              <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="15%" stop-color="#7C88FF"></stop>
+                <stop offset="25%" stop-color="#97A4FF"></stop>
+                <stop offset="40%" stop-color="#BDC8FF"></stop>
+                <stop offset="50%" stop-color="#D0D9F7"></stop>
+                <stop offset="80%" stop-color="#F7F0D2"></stop>
+                <stop offset="100%" stop-color="#FFF3B1"></stop>
+              </linearGradient>      
+              <circle class="circle-chart-circle" class="external-circle" stroke-width="1.5" fill="none" stroke="url(#linearColors)"cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart-info">
+                <text class="circle-chart-percent" x="16.91549431" y="18" alignment-baseline="central" text-anchor="middle" font-size="8">0%</text>  
+              </g>
+            </svg>
+          </div>
+          <div class="text-box">
+            <p class="goal-name">하루동안 물 2L마시기</p>
+            <i class="icon icon-present"></i>
+            <p class="goal-reward">mac립스틱 1개사기</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="goal-main">   
+          <div class="header-wrap">
+            <a href="#"><i class="icon icon-menu"></i></a>
+            <a href="#"><i class="icon icon-logow"></i></a>
+            <a href="#"><i class="icon icon-more"></i></a>
+          </div>     
+          <div class="progressbar">                
+            <span class="Count" class="blind">200</span>
+            <span class="Count" class="blind">55</span>
+            <svg class="circle-chart"viewbox="0 0 33.83098862 33.83098862" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+              <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="15%" stop-color="#7C88FF"></stop>
+                <stop offset="25%" stop-color="#97A4FF"></stop>
+                <stop offset="40%" stop-color="#BDC8FF"></stop>
+                <stop offset="50%" stop-color="#D0D9F7"></stop>
+                <stop offset="80%" stop-color="#F7F0D2"></stop>
+                <stop offset="100%" stop-color="#FFF3B1"></stop>
+              </linearGradient>      
+              <circle class="circle-chart-circle" class="external-circle" stroke-width="1.5" fill="none" stroke="url(#linearColors)"cx="16.91549431" cy="16.91549431" r="15.91549431" />
+              <g class="circle-chart-info">
+                <text class="circle-chart-percent" x="16.91549431" y="18" alignment-baseline="central" text-anchor="middle" font-size="8">0%</text>  
+              </g>
+            </svg>
+          </div>
+          <div class="text-box">
+            <p class="goal-name">하루동안 물 2L마시기</p>
+            <i class="icon icon-present"></i>
+            <p class="goal-reward">mac립스틱 1개사기</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next" class="blind"><i class="icon icon-arrowr"></i></div>
+    <div class="swiper-button-prev"><i class="icon icon-arrowl"></i></div>
+  </div>
+<!--/goal-main -->
+
+<!--goal-list1 -->
+  <div class="goal-list1">        
+    <div class="header-wrap">
+      <a href="#"><i class="icon icon-menu"></i></a>
+      <a href="#"><i class="icon icon-logow"></i></a>
+      <a href="#"><i class="icon icon-more"></i></a>
+    </div>
+    <div class="wrap">
+      <div class="progressbar">
+        <svg class="circle-chart"viewbox="0 0 33.83098862 33.83098862" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+          <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="15%" stop-color="#7C88FF"></stop>
+            <stop offset="25%" stop-color="#97A4FF"></stop>
+            <stop offset="40%" stop-color="#BDC8FF"></stop>
+            <stop offset="50%" stop-color="#D0D9F7"></stop>
+            <stop offset="80%" stop-color="#F7F0D2"></stop>
+            <stop offset="100%" stop-color="#FFF3B1"></stop>
+          </linearGradient>      
+          <circle class="circle-chart-circle" class="external-circle" stroke-width="1.5" fill="none" stroke="url(#linearColors)"cx="16.91549431" cy="16.91549431" r="15.91549431" />
+          <g class="circle-chart-info">
+            <text class="circle-chart-percent" x="16.91549431" y="18" alignment-baseline="central" text-anchor="middle" font-size="8">0%</text>  
+          </g>
+        </svg>
+      </div>
+      <div class="text-box">
+        <a href="#"><i class="icon icon-pencil"></i></a>            
+        <p class="goal-name">하루동안 물 2L마시기</p>
+        <p class="goal-reward">mac립스틱 1개사기</p>
+        <p class="goal-deta">세부내용확인</p>
+      </div>
+      <div class="goal-deta-tab">
+        <p>한달동안 커피x, 점심까지 물 1L마시기</p>
+      </div>        
+      <div class="list-tab">
+        <ul class="m-warp">
+          <li class="list1"><a href="#"><i class="icon icon-share"></i></a>
+            <ul class="tab" >
+              <li class="share">
+                <ul>
+                  <li><a href="#"><i class="icon icon-kakaoc"></i></a> <a href="#">카카오톡</a></li>                    
+                  <li><a href="#"><i class="icon icon-facebookc"></i></a><a href="#">페이스북</a></li>                    
+                  <li><a href="#"><i class="icon icon-message"></i></a><a href="#">메세지</a></li>                  
+                  <li><a href="#"><i class="icon icon-url"></i></a><a href="#">링크복사</a></li>                  
+                </ul>                            
+              </li>              
+            </ul>
+          </li>
+          <li class="list2"><a href="#"><i class="icon icon-sharep"></i></a>
+            <ul class="tab">                      
+              <li class="invite">
+                <ul>
+                  <li>
+                    <form action="searchResult.html" class="search">
+                      <button class="icon icon-search"></button>                                        
+                      <input type="text">
+                    </form>
+                  </li>
+                  <li>채현 <a>초대</a></li>
+                  <li>황희경 <a>초대</a></li>
+                  <li>장지선 <a>초대</a></li>
+                </ul>
+              </li> 
+            </ul>
+          </li>
+          <li class="list3"><a href="#"><i class="icon icon-alram"></i></a>
+            <ul class="tab">
+              <div>
+                <li class="alram-tab">
+                  <span>알람</span>
+                  <div class="switch appSwitch">
+                    <input type="checkbox" name="" id="app-on-off">
+                    <label for="app-on-off" class="on-off">  
+                      <span class="btn"></span> 
+                    </label>
+                  </div>
+                  <a href="#"><i class="icon icon-more"></i></a>
+                </li>
+                <li class="i-tab">
+                  <a href="#"><i class="icon icon-sun"></i></a>
+                  <i class="icon icon-line"></i>
+                  <a href="#"><i class="icon icon-moon1"></i></a>
+                  <i class="icon icon-line"></i>                
+                  <a href="#"><i class="icon icon-moon"></i></a>
+                  <i class="icon icon-line"></i>
+                </li>
+                <li class="time">
+                  <div>
+                    <a href="#">06:00</a>
+                    <div class="switch appSwitch">
+                      <input type="checkbox" name="" id="app-on-off">
+                      <label for="app-on-off" class="on-off">  
+                        <span class="btn"></span> 
+                      </label>
+                    </div>
+                    <a href="#"><i class="icon icon-m1"></i></a>
+                    <a href="#"><i class="icon icon-W1"></i></a>
+                    <a href="#"><i class="icon icon-t21"></i></a>
+                  </div>
+                  <div>                  
+                    <a href="#">15:20</a>
+                    <div class="switch appSwitch">
+                      <input type="checkbox" name="" id="app-on-off">
+                      <label for="app-on-off" class="on-off">  
+                        <span class="btn"></span> 
+                      </label>
+                    </div>
+                    <a href="#"><i class="icon icon-s71"></i></a>
+                  </div>
+                  <div>                    
+                    <a href="#">15:20</a>
+                    <div class="switch appSwitch">
+                      <input type="checkbox" name="" id="app-on-off">
+                      <label for="app-on-off" class="on-off">  
+                        <span class="btn"></span> 
+                      </label>
+                    </div>
+                    <a href="#"><i class="icon icon-m"></i></a>
+                    <a href="#"><i class="icon icon-t4"></i></a>
+                  </div>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>   
+      </div> 
+    </div>
+    <div class="wrap1">
+      <div class="progressbar">
+        <svg class="circle-chart"viewbox="0 0 33.83098862 33.83098862" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+          <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="15%" stop-color="#7C88FF"></stop>
+            <stop offset="25%" stop-color="#97A4FF"></stop>
+            <stop offset="40%" stop-color="#BDC8FF"></stop>
+            <stop offset="50%" stop-color="#D0D9F7"></stop>
+            <stop offset="80%" stop-color="#F7F0D2"></stop>
+            <stop offset="100%" stop-color="#FFF3B1"></stop>
+          </linearGradient>      
+          <circle class="circle-chart-circle" class="external-circle" stroke-width="1.5" fill="none" stroke="url(#linearColors)"cx="16.91549431" cy="16.91549431" r="15.91549431" />
+          <g class="circle-chart-info">
+            <text class="circle-chart-percent" x="16.91549431" y="18" alignment-baseline="central" text-anchor="middle" font-size="8">0%</text>  
+          </g>
+        </svg>
+      </div>
+      <div class="text-box">
+        <a href="#"><i class="icon icon-pencil"></i></a>            
+        <p class="goal-name">하루동안 물 2L마시기</p>
+        <p class="goal-reward">mac립스틱 1개사기</p>
+        <p class="goal-deta">세부내용확인</p>
+      </div>
+      <div class="goal-deta-tab">
+        <p>한달동안 커피x, 점심까지 물 1L마시기</p>
+      </div>        
+      <div class="list-tab">
+        <ul class="m-warp">
+          <li class="list1"><a href="#"><i class="icon icon-share"></i></a></li>
+          <li class="list2"><a href="#"><i class="icon icon-sharep"></i></a></li>           
+          <li class="list3"><a href="#"><i class="icon icon-alram"></i></a></li>
+        </ul>   
+      </div> 
+    </div>
+    <a href="#" class="more"><i class="icon icon-more"></i></a>                 
+  </div>
+<!--/goal-list1 -->
+
+<!--goal-list2 -->
+  <div class="goal-list2">     
+    <div class="header-wrap">
+      <a href="#"><i class="icon icon-menu"></i></a>
+      <a href="#"><i class="icon icon-logow"></i></a>
+      <a href="#"><i class="icon icon-more"></i></a>
+    </div>
+    <div class="progressbar">
+      <svg class="circle-chart"viewbox="0 0 33.83098862 33.83098862" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="linearColors" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="15%" stop-color="#7C88FF"></stop>
+          <stop offset="25%" stop-color="#97A4FF"></stop>
+          <stop offset="40%" stop-color="#BDC8FF"></stop>
+          <stop offset="50%" stop-color="#D0D9F7"></stop>
+          <stop offset="80%" stop-color="#F7F0D2"></stop>
+          <stop offset="100%" stop-color="#FFF3B1"></stop>
+        </linearGradient>      
+        <circle class="circle-chart-circle" class="external-circle" stroke-width="1.5" fill="none" stroke="url(#linearColors)"cx="16.91549431" cy="16.91549431" r="15.91549431" />
+        <g class="circle-chart-info">
+          <text class="circle-chart-percent" x="16.91549431" y="18" alignment-baseline="central" text-anchor="middle" font-size="8">0%</text>  
+        </g>
+      </svg>
+    </div>
+    <div class="text-box">
+      <a href="#"><i class="icon icon-pencil"></i></a>            
+      <p class="goal-name">하루동안 물 2L마시기</p>
+      <p class="goal-reward">mac립스틱 1개사기</p>
+      <p class="goal-deta">세부내용확인</p>
+      </div> 
+      <div class="goal-deta-tab">
+        <p>한달동안 커피x, 점심까지 물 1L마시기</p>
+      </div>       
+    <div class="list-tab">
+      <ul class="m-warp">
+        <li class="list1"><a href="#"><i class="icon icon-share"></i></a>
+          <ul class="tab" >
+            <li class="search">
+              <ul>
+                <li>
+                  <form action="searchResult.html" class="search">
+                    <button class="icon icon-search"></button>                                        
+                    <input type="text">
+                  </form>
+                </li>
+                <li>채현 <a>초대</a></li>
+                <li>황희경 <a>초대</a></li>
+                <li>장지선 <a>초대</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="list2"><a href="#"><i class="icon icon-sharep"></i></a>
+          <ul class="tab">                      
+            <li class="invite">
+              <ul>
+                <li><a href="#"><i class="icon icon-kakaoc"></i>카카오톡</a></li>                    
+                <li><a href="#"><i class="icon icon-facebookc"></i>페이스북</a></li>                    
+                <li><a href="#"><i class="icon icon-message"></i>메세지</a></li>                  
+                <li><a href="#"><i class="icon icon-url"></i>링크복사</a></li>                  
+              </ul>                            
+            </li>                        
+          </ul>
+        </li>
+        <li class="list3"><a href="#"><i class="icon icon-alram"></i></a>
+          <ul class="tab">
+            <li>
+              알람
+              <label for="on-off" class="on-off">
+                <span class="btn"></span>
+              </label>
+              <a href="#"><i class="icon icon-more"></i></a>
+            </li>
+            <li class="i-tab">
+              <a href="#"><i class="icon icon-sun"></i></a>
+              <a href="#"><i class="icon icon-moon"></i></a>
+              <a href="#"><i class="icon icon-moon"></i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>   
+    </div>  
+    <div class="container">
+        <ul>
+          <li class="main">
+            <a href="#"><i class="icon icon-first"></i> 술고래</a>
+            <div class="progress-bar" data-percent="100%">
+              <span class="percent">0%</span>
+              <span class="bar"></span>
+            </div>
+            <ul class="sticker-tab">
+              <li><a href="#"><i class="icon icon-sticker"></i></a></li>
+              <li><a href="#"><i class="icon icon-sticker"></i></a></li>
+              <li><a href="#"><i class="icon icon-sticker"></i></a></li>
+              <li><a href="#"><i class="icon icon-sticker"></i></a></li>
+              <li><a href="#"><i class="icon icon-sticker"></i></a></li>
+              <li><a href="#"><i class="icon icon-sticker"></i></a></li>
+              <li><a href="#"><i class="icon icon-sticker"></i></a></li>
+              <li><a href="#"><i class="icon icon-sticker"></i></a></li>                      
+            </ul>
+          </li>
+          <li class="main">
+            <a href="#"><i class="icon icon-second"></i> 춤추는 고래</a>
+            <div class="progress-bar" data-percent="50%">
+              <span class="percent">0%</span>
+              <span class="bar"></span>
+            </div>            
+          </li>
+          <li class="main">
+            <a href="#"><i class="icon icon-third"></i> 나비</a>
+            <div class="progress-bar" data-percent="60%">
+              <span class="percent">0%</span>
+              <span class="bar"></span>
+            </div>           
+          </li>
+          <li class="main">
+            <a href="#">나가기<i class="icon icon-arrowr"></i></a>
+          </li>
+        </ul>
+    </div>
+  </div>
+<!--/goal-list2 -->
+
+<!--alram-set -->
+  <div class="alram-set">
+    <a href="#"><i class="icon icon-closew"></i></a>  
+    <div class="time">
+      <ul>          
+        <li class="hours">
+          <div class="swiper-container">
+            <div class="swiper-wrapper"></div>    
+          </div>
+        </li>
+        <span>:</span>
+        <li class="minutes">
+          <div class="swiper-container">
+            <div class="swiper-wrapper"></div>    
+          </div>
+        </li>
+      </ul>
+    </div>                              
+    <div class="days">
+      <a href="#"><i class="icon icon-m1"></i></a>                        
+      <a href="#"><i class="icon icon-t21"></i></a>                        
+      <a href="#"><i class="icon icon-w"></i></a>                        
+      <a href="#"><i class="icon icon-t4"></i></a>                        
+      <a href="#"><i class="icon icon-f"></i></a>                        
+      <a href="#"><i class="icon icon-s"></i></a>                        
+      <a href="#"><i class="icon icon-s7"></i></a>                        
+    </div>
+    <button>완료</button>
+  </div>
+<!--/alram-set -->
+
+<!--nav -->
+  <div class="nav"> 
+    <div class="nav-bg">
+      <button class="icon icon-close"></button>  
+      <div class="profile">                   
+        <a href="#"><i class="icon icon-profile"></i>
+        <i class="icon icon-setting"></i></a>
+      </div>
+      <span><b>고래</b> 님</span>                                              
+      <div class="menu">
+        <ul>
+          <li>        
+            <a href="#">알림<i class="fas fa-angle-down"></i></a>    
+            <ul class="box">
+              <li>
+                <span>앱 알림</span> 
+                <div class="switch appSwitch">
+                  <input type="checkbox" name="" id="app-on-off">
+                  <label for="app-on-off" class="on-off">  
+                    <span class="btn"></span> 
+                  </label>
+                </div>
+              </li>
+              <li>
+                <span>100% 달성 알림</span> 
+                <div class="switch endSwitch">
+                  <input type="checkbox" name="" id="end-on-off">
+                  <label for="end-on-off" class="on-off">  
+                    <span class="btn"></span> 
+                  </label>
+                </div>                            
+              </li>                            
+            </ul>                    
+          </li>
+          <li>
+            <a href="#">암호설정<i class="fas fa-angle-down"></i></a>                       
+            <ul class="box">
+              <li>
+              <span>암호 사용</span> 
+              <div class="switch codeSwitch">
+                <input type="checkbox" name="" id="code-on-off">
+                <label for="code-on-off" class="on-off">  
+                  <span class="btn"></span> 
+                </label>
+              </div>
+              </li>
+              <li>
+                <a href="#" id="codeSetting"><span>암호 설정</span></a>                                                   
+              </li>                            
+            </ul>
+          </li>
+          <li>
+            <a href="#" >동기화<i class="fas fa-angle-down"></i></a>                        
+            <ul class="box">
+              <li><a href="#">구글 드라이브 동기화</a></li>
+              <li><a href="#">N 드라이브 동기화</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="ask">문의하기</a></li>
+          <li><a href="#" class="version">버전</a></li>
+          <li><a href="#" class="site">라이센스</a></li>
+          <li><a href="#" class="logout">로그아웃</a></li>  
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--/nav -->
+
+<!--pop영역 ============================================================== -->
+<!--ask-pop -->
+  <div class="ask-pop">
+    <p>새 메일</p>
+    <p>_문의하기</p>
+    받는사람 <input type="email" name="emailadress" id=""><br>
+    제목 <input type="text" name="title" id="">
+    <textarea cols="50" rows="20"></textarea>
+    <a href="#"><i class="icon icon-photo"></i></a>
+    <div class="ask-btn">
+      <button class="cancel">취소</button>
+      <button class="send">보내기</button>
+    </div>
+  </div>
+<!--/ask-pop -->
+
+<!--access-pop -->
+  <div class="access-pop">    
+    <div class="bg">    
+      <p>고래의 목표 가사진, 카메라에 접근 할 수있도록 허용하시겠습니까? </p>
+      <p>*접근을 허용하지 않으면, 앨범을 표시하거나 사진을 저장 할 수 없습니다.</p>
+      <button class="no">허용안함</button>
+      <button class="ok">승인</button>
+    </div>
+  </div>
+<!--/access-pop -->
+
+<!--idfind-pop -->
+  <div class="idfind-pop">    
+    <div class="bg">    
+      <div class="idfind-btn">
+        <p>입력하신 이메일로 발송 완료하였습니다.</p>
+        <button class="ok">확인</button>
+      </div>
+    </div>
+  </div>
+<!--/idfind-pop -->
+
+<!--site-pop -->
+  <div class="site-pop">    
+    <div class="bg">    
+      <p>웹 사이트 SUPPORT@WHALE.COM</p>
+      <a href="#"><span> 개인정보처리방침</span></a>
+      <button class="ok">닫기</button>            
+    </div>
+  </div>
+<!--/site-pop -->
+
+<!--version-pop -->
+  <div class="version-pop">
+    <div class="bg">
+      <p>버전 _ 4.0.6<br> 필요한 버전 _ 4.4 이상</p>
+      <button class="ok">닫기</button>
+    </div>
+  </div>
+<!--/version-pop -->
+
+<!--pw-pop -->
+  <div class="pw-pop">
+    <div class="bg">
+      <p>암호가 설정되었습니다.</p>
+      <button class="ok">닫기</button>
+    </div>
+  </div>
+<!--/pw-pop -->
+
+<!--profile-pop -->
+  <div class="profile-pop">
+    <button>앨범에서 사진선택</button>
+    <button>카메라로 이동</button>
+    <button>카카오톡 프로필 가져오기</button>
+    <button>취소</button>
+  </div>
+<!--/profile-pop -->
+
+<!--out-pop -->
+  <div class="out-pop">
+    <p>정말 이 목표를 나가시겠습니까?</p>
+    <div class="out-btn">
+      <button>취소</button>
+      <button>나가기</button>
+    </div>
+  </div>
+<!--/out-pop -->
+
+<!--logout-pop -->
+<div class="logout-pop">
+  <div class="bg">
+    <i class="icon icon-popwhale"></i>
+    <p class="real">고뤠?!</p>
+    <p>정말 로그아웃 하시겠습니까?</p>
+    <div class="logout-btn">
+      <button class="cancel">취소</button>
+      <button class="logout">로그아웃</button>
+    </div>
+  </div>
+</div>
+<!--/logout-pop -->
+
+</body>
+</html>
